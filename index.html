@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба 2 (частково)</title>
+    <style>
+        /* Стилі для першої таблиці */
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Стилі для другої складної таблиці */
+        .complex-table {
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .complex-table th, .complex-table td {
+            border: 1px solid #555;
+        }
+
+        .complex-table .center {
+            text-align: center;
+        }
+
+        .complex-table .left {
+            text-align: left;
+        }
+
+        .complex-table .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Перша таблиця -->
+    <h2 style="text-align: center;">Перша таблиця</h2>
+    <table>
+        <caption><strong>Проста таблиця</strong></caption>
+        <thead>
+            <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+                <th>Колонка 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./pizza/1.jpg" alt="Зображення 1"></td>
+                <td><img src="./pizza/2.jpg" alt="Зображення 2"></td>
+                <td><img src="./pizza/5.jpg" alt="Зображення 3"></td>
+                <td><img src="./pizza/4.jpg" alt="Зображення 4"></td>
+            </tr>
+            <tr>
+                <td><a href="https://example.com">Посилання 1</a></td>
+                <td><a href="https://example.com">Посилання 2</a></td>
+                <td><a href="https://example.com">Посилання 3</a></td>
+                <td><a href="https://example.com">Посилання 4</a></td>
+            </tr>
+            <tr>
+                <td>Піца 1</td>
+                <td>Піца 2</td>
+                <td>Піца 3</td>
+                <td>Піца 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Друга складна таблиця -->
+    <h2 style="text-align: center;">Друга таблиця</h2>
+    <table class="complex-table">
+        <caption><strong>Складна таблиця</strong></caption>
+        <colgroup>
+            <col span="2" style="background-color: #f2f2f2;">
+            <col style="background-color: #ddd;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="3">Об'єднаний заголовок таблиці</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="center">Об'єднана комірка</td>
+                <td class="left">Текст вирівняний ліворуч</td>
+                <td class="right">Текст вирівняний праворуч</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">Об'єднана комірка на 2 колонки</td>
+            </tr>
+            <tr>
+                <td class="left">Текст</td>
+                <td class="center">Текст</td>
+                <td class="right">Текст</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Плаваючий фрейм -->
+    <h2 style="text-align: center;">Плаваючий фрейм</h2>
+    <iframe src="https://uk.wikipedia.org" width="100%" height="300" style="border: 2px solid #000;"></iframe>
+</body>
+</html>
