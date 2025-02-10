@@ -1,0 +1,39 @@
+table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .complex-table {
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .complex-table th, .complex-table td {
+            border: 1px solid #555;
+        }
+
+        .complex-table .center {
+            text-align: center;
+        }
+
+        .complex-table .left {
+            text-align: left;
+        }
+
+        .complex-table .right {
+            text-align: right;
+        }
